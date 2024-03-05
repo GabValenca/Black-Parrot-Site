@@ -12,10 +12,10 @@ app.get('/', (req, res) => {
 });
 
 // Certificado privado e público
-const privateKey = fs.readFileSync('/etc/ssl/blackparrot.com.br/blackparrot.com.br.key', 'utf8');
-const certificate = fs.readFileSync('/etc/ssl/blackparrot.com.br/blackparrot.com.br.crt', 'utf8');
+//const privateKey = fs.readFileSync('/etc/ssl/blackparrot.com.br/blackparrot.com.br.key', 'utf8');
+//const certificate = fs.readFileSync('/etc/ssl/blackparrot.com.br/blackparrot.com.br.crt', 'utf8');
 
-const credentials = { key: privateKey, cert: certificate };
+//const credentials = { key: privateKey, cert: certificate };
 
 // Inicia o servidor HTTP para redirecionar automaticamente para HTTPS
 const httpServer = http.createServer((req, res) => {
