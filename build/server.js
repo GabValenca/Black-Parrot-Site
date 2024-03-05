@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 // Inicia o servidor HTTP para redirecionar automaticamente para HTTPS
 const httpServer = http.createServer((req, res) => {
-  res.writeHead(301, { 'Location': 'https://' + req.headers.host + req.url });
+  res.writeHead(301, { 'Location': 'http://' + req.headers.host + req.url });
   res.end();
 });
 
@@ -32,7 +32,7 @@ httpServer.listen(80, () => {
 app.use(express.static('/home/build/'));
 
 // Cria o servidor HTTPS
-const httpsServer = https.createServer(credentials, app);
+//const httpsServer = https.createServer(credentials, app);
 
 // Inicia o servidor HTTPS na porta 443
 httpsServer.listen(443, () => {
