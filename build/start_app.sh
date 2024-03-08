@@ -3,7 +3,7 @@
 APP_NAME="BlackParrot"
 NODE_COMMAND="node"
 SERVER_SCRIPT="server.js"
-APP_DIR="/home/build/"
+APP_DIR="/build/"
 HTTP_PORT=80
 
 # Navega até o diretório da aplicação
