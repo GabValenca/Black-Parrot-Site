@@ -35,6 +35,6 @@ app.use(express.static('/home/build/'));
 //const httpsServer = https.createServer(credentials, app);
 
 // Inicia o servidor HTTPS na porta 443
-httpsServer.listen(443, () => {
-  console.log('Servidor HTTPS está rodando na porta 443');
-});
+//httpsServer.listen(443, () => {
+//  console.log('Servidor HTTPS está rodando na porta 443');
+//});
