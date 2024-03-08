@@ -3,8 +3,8 @@
 APP_NAME="BlackParrot"
 NODE_COMMAND="node"
 SERVER_SCRIPT="server.js"
-APP_DIR="/build/"
-HTTP_PORT=80
+APP_DIR="/app-repo/Black-Parrot-teste/build/"
+HTTP_PORT=3000
 
 # Navega até o diretório da aplicação
 cd $APP_DIR || exit 1
