@@ -29,7 +29,7 @@ httpServer.listen(80, () => {
 });
 
 // Configuração para servir arquivos estáticos
-app.use(express.static('/home/build/'));
+app.use(express.static('/home/Black-Parrot-Site/build/'));
 
 // Cria o servidor HTTPS
 const httpsServer = https.createServer(credentials, app);
