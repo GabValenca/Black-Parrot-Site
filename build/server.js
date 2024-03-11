@@ -2,13 +2,14 @@ const express = require('express');
 const https = require('https');
 const http = require('http');
 const fs = require('fs');
+const path = require('path'); // Importe o módulo 'path' do Node.js
 
 const app = express();
 
 // Roteamento para a aplicação
 app.get('/', (req, res) => {
-  // Lógica para renderizar a página principal da sua aplicação
-  res.send('Conteúdo da sua aplicação Node.js');
+  // Use o método sendFile para enviar o conteúdo do arquivo HTML
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Certificado privado e público
