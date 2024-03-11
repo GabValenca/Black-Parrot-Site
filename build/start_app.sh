@@ -1,8 +1,8 @@
 #!/bin/bash
 
 APP_NAME="BlackParrot"
-NODE_COMMAND="nohup node"
-SERVER_SCRIPT="server.js &"
+NODE_COMMAND="node"
+SERVER_SCRIPT="server.js"
 APP_DIR="/home/Black-Parrot-Site/build"
 HTTP_PORT=80
 
