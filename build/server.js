@@ -38,3 +38,7 @@ const httpsServer = https.createServer(credentials, app);
 httpsServer.listen(443, () => {
   console.log('Servidor HTTPS está rodando na porta 443');
 });
+
+app.listen(3000, function() {
+  console.log('Servidor rodando na porta 3000');
+});

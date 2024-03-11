@@ -25,7 +25,7 @@ APP_DIR="/home/Black-Parrot-Site/build"  # Substitua 'username' pelo seu nome de
 cd "$APP_DIR"
 
 # Instale as dependências (se necessário)
-# npm install
+npm install
 
 # Inicie o servidor Node.js na porta 443
 node "$SERVER_FILE" &
@@ -33,6 +33,7 @@ node "$SERVER_FILE" &
 # Redirecione o tráfego HTTP (porta 80) para HTTPS (porta 443)
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+udo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 443
 
 # Exiba mensagem informativa
