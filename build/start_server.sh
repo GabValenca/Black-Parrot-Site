@@ -19,7 +19,7 @@ CERTIFICATES_DIR="/etc/ssl/blackparrot.com.br"
 # CERTIFICATE_CHAIN="/etc/ssl/blackparrot.com.br/chain.pem"
 
 # Diretório onde a aplicação está localizada
-APP_DIR="/home/build"  # Substitua 'username' pelo seu nome de usuário real
+APP_DIR="/home/Black-Parrot-Site/build"  # Substitua 'username' pelo seu nome de usuário real
 
 # Mude para o diretório do aplicativo
 cd "$APP_DIR"
