@@ -33,7 +33,6 @@ nohup node "$SERVER_FILE" &
 # Redirecione o tráfego HTTP (porta 80) para HTTPS (porta 443)
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 3000 -j ACCEPT
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 443
 
 # Exiba mensagem informativa
