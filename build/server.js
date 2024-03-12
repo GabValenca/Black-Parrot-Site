@@ -41,9 +41,9 @@ httpsServer.listen(443, () => {
 
 
 // Cria o servidor HTTP
-const httpServer = http.createServer(app);
+//const httpServer = http.createServer(app);
 
 // Inicia o servidor HTTP na porta 80
-httpServer.listen(80, () => {
-  console.log(`${new Date().toLocaleString()} - Servidor HTTP está rodando na porta 80`);
-});
+//httpServer.listen(80, () => {
+//  console.log(`${new Date().toLocaleString()} - Servidor HTTP está rodando na porta 80`);
+//});
