@@ -1,97 +1,58 @@
-3/12/2024, 3:57:11 AM - Servidor HTTPS está rodando na porta 443
-3/12/2024, 3:57:11 AM - Servidor HTTP está rodando na porta 80
-3/12/2024, 4:06:08 AM - Servidor HTTPS está rodando na porta 443
-3/12/2024, 4:06:08 AM - Servidor HTTP está rodando na porta 80
-3/12/2024, 5:03:06 AM - Servidor HTTPS está rodando na porta 443
+Servidor HTTP está rodando na porta 80
+Servidor HTTP está rodando na porta 80
+Servidor HTTP está rodando na porta 80
+Recebido: GET /
+Recebido: GET /favicon.ico
 node:events:497
       throw er; // Unhandled 'error' event
       ^
 
-Error: listen EADDRINUSE: address already in use :::443
+Error: listen EADDRINUSE: address already in use 0.0.0.0:80
     at Server.setupListenHandle [as _listen2] (node:net:1893:16)
     at listenInCluster (node:net:1941:12)
-    at Server.listen (node:net:2029:7)
-    at Object.<anonymous> (/home/Black-Parrot-Site/build/server.js:38:13)
-    at Module._compile (node:internal/modules/cjs/loader:1378:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
-    at Module.load (node:internal/modules/cjs/loader:1212:32)
-    at Module._load (node:internal/modules/cjs/loader:1028:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)
-    at node:internal/main/run_main_module:28:49
+    at doListen (node:net:2096:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
 Emitted 'error' event on Server instance at:
     at emitErrorNT (node:net:1920:8)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
   code: 'EADDRINUSE',
   errno: -98,
   syscall: 'listen',
-  address: '::',
-  port: 443
+  address: '0.0.0.0',
+  port: 80
 }
 
 Node.js v21.6.1
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-Middleware de redirecionamento chamado
-3/12/2024, 10:48:54 PM - Servidor HTTPS está rodando na porta 443
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:80
+    at Server.setupListenHandle [as _listen2] (node:net:1893:16)
+    at listenInCluster (node:net:1941:12)
+    at doListen (node:net:2096:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1920:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 80
+}
+
+Node.js v21.6.1
+Recebido: GET /
+Recebido: GET /favicon.ico
+3/15/2024, 11:11:05 PM - Servidor HTTP está rodando na porta 80
+3/15/2024, 11:12:12 PM - Servidor HTTPS está rodando na porta 443
+3/15/2024, 11:12:12 PM - Servidor HTTP está rodando na porta 80
+3/15/2024, 11:13:39 PM - Servidor HTTPS está rodando na porta 443
+3/15/2024, 11:13:39 PM - Servidor HTTP está rodando na porta 80
+3/15/2024, 11:20:44 PM - Servidor HTTPS está rodando na porta 443
+3/15/2024, 11:20:44 PM - Servidor HTTP está rodando na porta 80
+3/15/2024, 11:33:07 PM - Servidor HTTPS está rodando na porta 443
+3/15/2024, 11:33:07 PM - Servidor HTTP está rodando na porta 80
+3/15/2024, 11:34:59 PM - Servidor HTTPS está rodando na porta 443
+3/15/2024, 11:34:59 PM - Servidor HTTP está rodando na porta 80

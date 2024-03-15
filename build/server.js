@@ -2,8 +2,7 @@ const express = require('express');
 const https = require('https');
 const http = require('http');
 const fs = require('fs');
-const path = require('path'); // Importe o módulo 'path' do Node.js
-
+const path = require('path');
 const app = express();
 
 // Roteamento para a aplicação
@@ -15,35 +14,39 @@ app.get('/', (req, res) => {
 // Certificado privado e público
 const privateKey = fs.readFileSync('/etc/ssl/blackparrot.com.br/blackparrot.com.br.key', 'utf8');
 const certificate = fs.readFileSync('/etc/ssl/blackparrot.com.br/blackparrot.com.br.crt', 'utf8');
-
 const credentials = { key: privateKey, cert: certificate };
 
 // Configuração para servir arquivos estáticos
 app.use(express.static('/home/Black-Parrot-Site/build'));
 
 // Middleware de redirecionamento
-app.use((req, res, next) => {
-  console.log('Middleware de redirecionamento chamado');
-  if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) {
-    res.redirect(`https://${req.hostname}${req.url}`);
-  } else {
-    next();
-  }
+// app.use((req, res, next) => {
+//   console.log('Middleware de redirecionamento chamado');
+//   if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) {
+//     res.redirect(`https://${req.hostname}${req.url}`);
+//   } else {
+//     next();
+//   }
+// });
+
+app.get('*', function(request, response){
+  response.redirect('https://${req.hostname}${req.url}');
 });
+
 
 // Cria o servidor HTTPS
 const httpsServer = https.createServer(credentials, app);
 
 // Inicia o servidor HTTPS na porta 443
-httpsServer.listen(443, () => {
+httpsServer.listen(443, '0.0.0.0',() => {
   console.log(`${new Date().toLocaleString()} - Servidor HTTPS está rodando na porta 443`);
 });
 
 
-// Cria o servidor HTTP
-//const httpServer = http.createServer(app);
+//Cria o servidor HTTP
+const httpServer = http.createServer(app);
 
-// Inicia o servidor HTTP na porta 80
-//httpServer.listen(80, () => {
-//  console.log(`${new Date().toLocaleString()} - Servidor HTTP está rodando na porta 80`);
-//});
+//Inicia o servidor HTTP na porta 80
+httpServer.listen(80, '0.0.0.0', () => {
+ console.log(`${new Date().toLocaleString()} - Servidor HTTP está rodando na porta 80`);
+});
